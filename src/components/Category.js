@@ -1,4 +1,5 @@
 import './Category.css';
+import { NavLink } from 'react-router-dom';
 import Card from './CategoryCard';
 
 const Category = () => {
@@ -7,21 +8,25 @@ const Category = () => {
       id: 1,
       city: 'Argentina',
       number: 1800,
+      path: '/cities',
     },
     {
       id: 2,
       city: 'Colombia',
       number: 1800,
+      path: '/cities',
     },
     {
       id: 3,
       city: 'Chile',
       number: 1800,
+      path: '/cities',
     },
     {
       id: 4,
       city: 'Ecuador',
       number: 1800,
+      path: '/cities',
     },
   ];
 
@@ -33,7 +38,9 @@ const Category = () => {
       </div>
       <div className="cardsContainer">
         {cardsInfo.map((el) => (
-          <Card key={el.id} id={el.id} city={el.city} number={el.number} />
+          <NavLink key={el.id} to={el.path}>
+            <Card key={el.id} id={el.id} city={el.city} number={el.number} />
+          </NavLink>
         ))}
       </div>
     </div>
