@@ -1,46 +1,34 @@
 import './Category.css';
-import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { fetchData } from '../redux/CategorySlice';
 import Card from './CategoryCard';
 
 const Category = () => {
-  const cardsInfo = [
-    {
-      id: 1,
-      city: 'Argentina',
-      number: 1800,
-      path: '/cities',
-    },
-    {
-      id: 2,
-      city: 'Colombia',
-      number: 1800,
-      path: '/cities',
-    },
-    {
-      id: 3,
-      city: 'Chile',
-      number: 1800,
-      path: '/cities',
-    },
-    {
-      id: 4,
-      city: 'Ecuador',
-      number: 1800,
-      path: '/cities',
-    },
-  ];
+  const dispatch = useDispatch();
+  const countryName = useSelector((state) => state.categories.countryName);
+  const countryCases = useSelector((state) => state.categories.todayCases);
+  const categoriesStatus = useSelector((state) => state.categories.status);
+  const categories = useSelector((state) => state.categories.list);
+
+  useEffect(() => {
+    if (categoriesStatus === 'idle') {
+      dispatch(fetchData());
+    }
+  }, []);
 
   return (
     <div className="container">
-      <div className="header">
-        <h2>America Latina</h2>
-        <span>465456 views</span>
+      <div className="header flexColumn">
+        <h2>{countryName}</h2>
+        <span>{countryCases}</span>
       </div>
       <div className="cardsContainer">
-        {cardsInfo.map((el) => (
-          <NavLink key={el.id} to={el.path}>
-            <Card key={el.id} id={el.id} city={el.city} number={el.number} />
-          </NavLink>
+        {categories.map((el) => (
+          <Link key={el.id} to={`/details/${el.id}`}>
+            <Card id={el.id} city={el.name} activeCases={el.confirmedToday} />
+          </Link>
         ))}
       </div>
     </div>

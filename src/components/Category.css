@@ -1,4 +1,28 @@
 .cardsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #fa4f91;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: white;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 18px;
+  background-color: #fa4f91;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header span {
+  font-size: 14px;
+  font-weight: 600px;
 }
