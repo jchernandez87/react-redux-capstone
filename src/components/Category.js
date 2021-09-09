@@ -24,9 +24,12 @@ const Category = () => {
         <h2>{countryName}</h2>
         <span>{countryCases}</span>
       </div>
+      <div className="byRegion">
+        <span>STATS BY REGION</span>
+      </div>
       <div className="cardsContainer">
         {categories.map((el) => (
-          <Link key={el.id} to={`/details/${el.id}`}>
+          <Link key={el.id} to={`/details/${el.id}`} className="row">
             <Card id={el.id} city={el.name} activeCases={el.confirmedToday} />
           </Link>
         ))}

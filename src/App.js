@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from './redux/CategorySlice';
 import Home from './pages/Home';
 import Details from './pages/Details';
+import NavBar from './components/NavBar';
 
 function App() {
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/">
             <Home />
