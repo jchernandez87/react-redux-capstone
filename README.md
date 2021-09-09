@@ -97,10 +97,14 @@ A bookstore project using react-redux.
    ```sh
    npm start
    ```
+4. Run test
+   ```sh
+   npm test
+   ```
                                    
 ## Usage
 
-* Learn how to make a calculator using react.js
+* Track Spain's covid cases from all regions
 
 
 ## Roadmap
