@@ -134,6 +134,7 @@ Project Link: [https://github.com/jchernandez87/bookstore](https://github.com/jc
 
 
 ## Acknowledgements
+* [Design By Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
