@@ -59,7 +59,7 @@
 
 [![Capstone][product-screenshot]](https://sharp-edison-3d13a2.netlify.app/)
 
-A bookstore project using react-redux.
+An App that tracks Spain's covid data.
 ### Built With
 
 * [REACT](https://reactjs.org/)   
