@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { FaArrowCircleRight } from 'react-icons/fa';
+import './Details.css';
 
 const Details = ({
   id,
@@ -11,31 +13,48 @@ const Details = ({
   hospitalised,
 }) => (
   <div id={id}>
-    <div className="itemHeader">
-      <h4>{name}</h4>
-      <span>{cases}</span>
-      <span>Active</span>
+    <div className="itemHeader detailFlex">
+      <h4 className="lato">{name}</h4>
+      <span className="lato">{`${cases} Active `}</span>
     </div>
-    <div className="citiesContainer">
-      <div>
-        <span>Total Deaths</span>
-        <span>{deaths}</span>
+    <div className="regionInfo">
+      <span className="lato">REGION CASES INFO</span>
+    </div>
+    <div className="regionsContainer">
+      <div className="regionRow detailFlex">
+        <span className="latoBold">Total Deaths</span>
+        <div className="numbersInfo detailFlex">
+          <span className="latoRegular">{deaths}</span>
+          <FaArrowCircleRight />
+        </div>
       </div>
-      <div>
-        <span>New Deaths</span>
-        <span>{newDeaths}</span>
+      <div className="regionRow detailFlex">
+        <span className="latoBold">New Deaths</span>
+        <div className="numbersInfo detailFlex">
+          <span className="latoRegular">{newDeaths}</span>
+          <FaArrowCircleRight />
+        </div>
       </div>
-      <div>
-        <span>New Cases</span>
-        <span>{newCases}</span>
+      <div className="regionRow detailFlex">
+        <span className="latoBold">New Cases</span>
+        <div className="numbersInfo detailFlex">
+          <span className="latoRegular">{newCases}</span>
+          <FaArrowCircleRight />
+        </div>
       </div>
-      <div>
-        <span>Intesive Care</span>
-        <span>{intensive}</span>
+      <div className="regionRow detailFlex">
+        <span className="latoBold">Intesive Care</span>
+        <div className="numbersInfo detailFlex">
+          <span className="latoRegular">{intensive}</span>
+          <FaArrowCircleRight />
+        </div>
       </div>
-      <div>
-        <span>Hospitalised</span>
-        <span>{hospitalised}</span>
+      <div className="regionRow detailFlex">
+        <span className="latoBold">Hospitalised</span>
+        <div className="numbersInfo detailFlex">
+          <span className="latoRegular">{hospitalised}</span>
+          <FaArrowCircleRight />
+        </div>
       </div>
     </div>
   </div>

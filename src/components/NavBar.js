@@ -17,7 +17,7 @@ const NavBar = () => {
         <FaAngleLeft className="arrow" />
       </NavLink>
       <div>
-        <h3 className="navBarText">Covid-Stats</h3>
+        <h3 className="navBarText latoLight">covid stats</h3>
       </div>
       <div className="rightIcons navBarFlex">
         <FaMicrophone />

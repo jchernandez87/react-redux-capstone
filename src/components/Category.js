@@ -21,10 +21,12 @@ const Category = () => {
   return (
     <div className="container">
       <div className="header flexColumn">
-        <h2>{countryName}</h2>
-        <span>{countryCases}</span>
+        <div className="infoContainer">
+          <h2 className="lato">{countryName}</h2>
+          <span className="lato">{countryCases}</span>
+        </div>
       </div>
-      <div className="byRegion">
+      <div className="byRegion lato">
         <span>STATS BY REGION</span>
       </div>
       <div className="cardsContainer">
@@ -33,6 +35,7 @@ const Category = () => {
             <Card id={el.id} city={el.name} activeCases={el.confirmedToday} />
           </Link>
         ))}
+        <div className="empty" />
       </div>
     </div>
   );
