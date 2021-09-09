@@ -7,7 +7,6 @@ import Card from './CategoryCard';
 
 const Category = () => {
   const dispatch = useDispatch();
-  const countryName = useSelector((state) => state.categories.countryName);
   const countryCases = useSelector((state) => state.categories.todayCases);
   const categoriesStatus = useSelector((state) => state.categories.status);
   const categories = useSelector((state) => state.categories.list);
@@ -22,7 +21,7 @@ const Category = () => {
     <div className="container">
       <div className="header flexColumn">
         <div className="infoContainer">
-          <h2 className="lato">{countryName}</h2>
+          <h2 className="lato">SPAIN</h2>
           <span className="lato">{countryCases}</span>
         </div>
       </div>

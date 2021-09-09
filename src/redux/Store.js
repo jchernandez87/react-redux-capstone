@@ -7,12 +7,12 @@ import categories from './CategorySlice';
 const middlewares = [thunk];
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const reducer = combineReducers({
+const rootReducer = combineReducers({
   categories,
 });
 
 const store = createStore(
-  reducer,
+  rootReducer,
   composeEnhancers(applyMiddleware(...middlewares)),
 );
 

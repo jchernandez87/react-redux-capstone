@@ -16,9 +16,7 @@ export const fetchCategories = createSlice({
   name: 'categories',
   initialState: {
     list: [],
-    loading: 'idle',
     status: 'idle',
-    countryName: '',
     todayCases: 0,
   },
   reducers: {},
@@ -27,7 +25,6 @@ export const fetchCategories = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         const todayCases = action.payload.dates['2021-08-09'].countries.Spain.today_confirmed;
         const myData = [];
-        const countryName = action.payload.dates['2021-08-09'].countries.Spain.name;
         Object.entries(action.payload.dates['2021-08-09'].countries.Spain.regions).forEach((el) => {
           myData.push({
             id: el[1].id,
@@ -41,14 +38,12 @@ export const fetchCategories = createSlice({
           });
         });
         state.list = myData;
-        state.countryName = countryName;
         state.todayCases = `${todayCases} Active`;
         state.status = 'fulfilled';
       })
       .addCase(fetchData.pending, (state) => {
         state.status = [];
         state.status = 'pending';
-        state.countryName = '';
         state.todayCases = '';
       });
   },
