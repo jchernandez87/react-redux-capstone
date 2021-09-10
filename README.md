@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<br />
+<p align="center">
+  <a href="https://github.com/jchernandez87/react-redux-capstone">
+    <img src="https://user-images.githubusercontent.com/44485810/121365647-71b70400-c8fe-11eb-8ca7-b8295f16c12a.png" alt="Logo" width="80" height="80">
+  </a>
 
-### `npm start`
+  <h3 align="center">React-Redux Spain Covid Tracker</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    An App that displays Covid-19 data from Spain regions.
+    <br />
+    <a href="https://github.com/jchernandez87/react-redux-capstone"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://sharp-edison-3d13a2.netlify.app/">Live Demo</a>
+    ·
+    <a href="https://github.com/jchernandez87/react-redux-capstone"/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jchernandez87/react-redux-capstone"/issues">Request Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Capstone][product-screenshot]](https://sharp-edison-3d13a2.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+An App that tracks Spain's covid data.
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [REACT](https://reactjs.org/)   
+* [REDUX](https://redux.js.org/)                          
+* [JS](https://www.javascript.com/)
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Juan Carlos Hernandez**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GitHub: [Juan Carlos Hernandez](https://github.com/jchernandez87)
+- Twitter: [Twitter](https://twitter.com/Juancar70771241)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-carlos-hernandez-200a05175)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+                                   
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* You will not need additional instructions on installing Prerequisites.
+* In case you have node_modules on your folder Add them to .gitignore file before you a push.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* No prerequisites needed for this project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
+1. Clone the repo
+   ```sh
+   git clone git@github.com:jchernandez87/bookstore.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run server
+   ```sh
+   npm start
+   ```
+4. Run test
+   ```sh
+   npm test
+   ```
+                                   
+## Usage
 
-### Code Splitting
+* Track Spain's covid cases from all regions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+See the [open issues](https://github.com/jchernandez87/react-redux-capstone/issues) for a list of proposed features (and known issues).
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
 
-### Deployment
+## License
+                                   
+License Free.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+Juan Carlos - [@FindMeOnTwitter](https://twitter.com/Juancar70771241) - jchernandez827@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/jchernandez87/bookstore](https://github.com/jchernandez87/react-redux-capstone)
+
+
+## Acknowledgements
+* [Design By Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [React](https://reactjs.org/)
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/jchernandez87/react-redux-capstone?style=for-the-badge
+[contributors-url]: https://github.com/jchernandez87/react-redux-capstone/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jchernandez87/react-redux-capstone?style=for-the-badge
+[forks-url]: https://github.com/jchernandez87/react-redux-capstone/network/members
+[stars-shield]: https://img.shields.io/github/stars/jchernandez87/react-redux-capstone?style=for-the-badge
+[stars-url]: https://github.com/jchernandez87/react-redux-capstone/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jchernandez87/react-redux-capstone?style=for-the-badge
+[issues-url]: https://github.com/jchernandez87/react-redux-capstone/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/juan-carlos-hernandez-200a05175
+[product-screenshot]: https://user-images.githubusercontent.com/44485810/132767458-212c3352-9dba-46ff-a347-a87ab2153bc5.png
+
